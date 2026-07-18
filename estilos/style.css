@@ -3,3 +3,9 @@
     background-position: center;
     margin: 0 auto;
 }
+
+.carousel-item img {
+    height: 700px;
+    object-fit: cover;
+    object-position: center;
+}
