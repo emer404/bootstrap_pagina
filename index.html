@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EL trebol café</title>
     <link rel="stylesheet" href="/estilos/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
@@ -34,7 +35,7 @@
     </div>
   </nav>
 
-  <section class="text-center text-white d-flex align-items-center justify-content-center min-vh-100" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('/img/frias1.png'); background-size: cover; background-position: center;">
+  <section class="text-center text-white d-flex align-items-center justify-content-center min-vh-100" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('/img/fondo2.jpeg'); background-size: cover; background-position: center;">
     <div class="container py-5">
       <h1 class="display-4">Bienvenido a El trebol café</h1>
       <p class="lead">Descubre nuestra deliciosa selección de café.</p>
@@ -43,62 +44,199 @@
     </div>
   </section>
 
-  <section class="py-5 bg-light">
+  <section class="about py-5 text-dark">
     <div class="container-fluid">
       <div class="row">
         <div class="col-6">
-          <img src="/img/catalogo/coworking/Espacio de coworking grupal: 5 a 19 personas $100.000 la hora, incluye una bebida  (americano) por persona.PNG" alt="Producto 1" class="img-fluid rounded-start" style="border-radius: 30px;">
+          <img src="/img/catalogo/coworking/coworking.PNG" alt="Producto 1" class="img-fluid rounded-start" style="border-radius: 30px;">
         </div>
-        <div class="col-6">
-          <h2 class="display-5">Economía Popular: Más que café, es comunidad</h2>
+        <div class="col-6 ">
+          <h4>compromiso local</h4>
+          <h2 class="display-5 text-success">Economía Popular: Más que café, es comunidad</h2>
           <p>En Esencia Cafetera, creemos en el poder de lo local. Nuestro modelo de "Economía Popular" se basa en alianzas directas con pequeños caficultores de Pitalito, garantizando precios justos y fomentando el desarrollo de nuestra región.
           Cada grano que tostamos cuenta la historia de una familia trabajadora. No somos solo una cafetería; somos el puente entre el campo y la ciudad, celebrando la identidad huilense en cada sorbo</p>
+
+          <h5 class="text-success">Trato directo</h5>
+          <p>Sin intermediarios, para el bienestar del productor.</p>
+
+          <h5 class="text-success">Sostenible</h5>
+          <p>Prácticas amigables con el medio ambiente.</p>
         </div>
       </div>
+      
     </div>
     
   </section>
-
-  <section class="py-5">
+<!-- productos -->
+  <section class="py-5 bg-dark text-white">
     <div class="container">
       <h2 class="display-5 d-flex justify-content-center">Nuestros productos</h2>
-      <p class="lead text-center">Descubre nuestra deliciosa selección de productos</p>
+      <p class="lead text-center text-success">Descubre nuestra deliciosa selección de productos</p>
     
     <div class="row py-4">
       <div class="col-4">
-        <div class="card" style="width: 18rem;">
-  <img src="/img/catalogo/bebidas_calientes/capuchino 1.PNG" class="card-img-top" alt="Capuchino">
+        <div class="card h-100">
+  <img src="/img/catalogo/bebidas_calientes/capuchino 1.PNG" class="card-img-top" alt="Capuchino" style="height: 200px; object-fit: cover; object-position: center;">
   <div class="card-body">
     <h5 class="card-title">Capuchino</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">ver más</a>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#capuchino" data-producto="Capuchino">ver más</button>
   </div>
 </div>
       </div>
       <div class="col-4">
-        <div class="card" style="width: 18rem;">
-  <img src="/img/catalogo/bebidas_calientes/mocachino.PNG" style="background-size: cover;" class="card-img-top" alt="Mocachino">
+        <div class="card h-100">
+  <img src="/img/catalogo/bebidas_calientes/mocachino.PNG" class="card-img-top" alt="Mocachino">
   <div class="card-body">
     <h5 class="card-title">Mocachino</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">ver más</a>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mocachino" data-producto="Mocachino">ver más</button>
   </div>
 </div>
       </div>
       <div class="col-4">
-        <div class="card" style="width: 18rem;">
+        <div class="card h-100">
   <img src="/img/catalogo/bebidas_calientes/americano.PNG" style="background-size: cover;" class="card-img-top" alt="Americano">
   <div class="card-body">
     <h5 class="card-title">Americano</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">ver más</a>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#americano" data-producto="Americano">ver más</button>
+  </div>
+</div>
+      </div>
+
+        <div class="col-4 py-4">
+        <div class="card h-100">
+  <img src="/img/catalogo/postre/postre cuchareable de frutos rojos.PNG" style="background-size: cover;" class="card-img-top" alt="Americano">
+  <div class="card-body">
+    <h5 class="card-title">Postre frutos rojos</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#frutosrojos" data-producto="frutosrojos">ver más</button>
+    
+  </div>
+</div>
+      </div>
+
+        <div class="col-4 py-4">
+        <div class="card h-100">
+  <img src="/img/catalogo/bebidas_frias/cerveza michelada.PNG" style="background-size: cover;" class="card-img-top" alt="Americano">
+  <div class="card-body">
+    <h5 class="card-title">Cerveza Michelada</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#michelada" data-producto="Michelada">ver más</button>
+  </div>
+</div>
+      </div>
+        <div class="col-4 py-4">
+        <div class="card h-100">
+  <img src="/img/catalogo/bebidas_frias/café irlandés.PNG" style="background-size: cover;" class="card-img-top" alt="Americano">
+  <div class="card-body">
+    <h5 class="card-title">Café Irlandés</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#irlandes" data-producto="Irlandes">ver más</button>
   </div>
 </div>
       </div>
     </div>
+
+    <!-- modals -->
+     
+<!-- Modal -->
+<div class="modal fade" id="capuchino" tabindex="-1" aria-labelledby="productoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/img/catalogo/bebidas_calientes/capuchino 1.PNG" alt="" style="width: 500px; height: 400px;">
+        
+      </div>
+      <div class="modal-body">
+        <p id="producto-descripcion">Descripción del producto...</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Agregar al carrito</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="mocachino" tabindex="-1" aria-labelledby="productoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/img/catalogo/bebidas_calientes/mocachino.PNG" alt="" style="width: 470px; height: 400px;">
+        
+      </div>
+      <div class="modal-body">
+        <p id="producto-descripcion">Descripción del producto...</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Agregar al carrito</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="frutosrojos" tabindex="-1" aria-labelledby="productoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/img/catalogo/postre/postre cuchareable de frutos rojos.PNG" alt="" style="width: 470px; height: 400px;">
+        
+      </div>
+      <div class="modal-body">
+        <p id="producto-descripcion">Descripción del producto...</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Agregar al carrito</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="michelada" tabindex="-1" aria-labelledby="productoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/img/catalogo/bebidas_frias/cerveza michelada.PNG" alt="" style="width: 470px; height: 400px;">
+        
+      </div>
+      <div class="modal-body">
+        <p id="producto-descripcion">Descripción del producto...</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Agregar al carrito</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="irlandes" tabindex="-1" aria-labelledby="productoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/img/catalogo/bebidas_frias/café irlandés.PNG" alt="" style="width: 470px; height: 400px;">
+        
+      </div>
+      <div class="modal-body">
+        <p id="producto-descripcion">Descripción del producto...</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Agregar al carrito</button>
+      </div>
+    </div>
+  </div>
+</div>
+     
   </section>
 
-  <section class="py-5 bg-light">
+  <!-- galeria -->
+
+  <section class="galeria py-5  text-dark">
     <div class="container">
       <h2 class="display-5 d-flex justify-content-center">Nuestra esencia en imágenes</h2>
 
@@ -111,14 +249,14 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="/img/img_descargadas/unnamed.jpg" class="d-block w-100" alt="..." style="border-radius: 30px;">
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-caption d-none d-md-block ">
         <h5>Arte en cada taza</h5>
         <p>La precisión de nuestros baristas se refleja en cada preparación.</p>
       </div>
     </div>
     <div class="carousel-item">
       <img src="/img/img_descargadas/2.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-caption d-none d-md-block ">
         <h5>Grano Seleccionado</h5>
         <p>Tostión artesanal diaria para garantizar la máxima frescura.</p>
       </div>
@@ -147,8 +285,21 @@
     <div class="container">
       <h2 class=" d-flex justify-content-start">Contáctanos</h2>
       <p class="lead" style="font-size: 15px;">Estamos aquí para ayudarte. Contáctanos para cualquier consulta o pedido especial.</p>
+      <div class="d-flex gap-3 mt-3">
+  <a href="https://facebook.com/tupagina" target="_blank" class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+    <i class="bi bi-facebook"></i>
+  </a>
+   <a href="https://instagram.com/tupagina" target="_blank" class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+    <i class="bi bi-instagram"></i>
+  </a>
      
+    </div>
 
+    <a href="https://wa.me/573144218003" target="_blank" 
+   class="btn btn-success rounded-circle position-fixed d-flex align-items-center justify-content-center"
+   style="width: 60px; height: 60px; bottom: 30px; right: 30px; z-index: 999;">
+  <i class="bi bi-whatsapp" style="font-size: 28px;"></i>
+</a>
   </section>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>

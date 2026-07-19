@@ -5,7 +5,39 @@
 }
 
 .carousel-item img {
-    height: 700px;
+    height: 600px;
     object-fit: cover;
     object-position: center;
+}
+
+.card {
+    height: 100%;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body .btn {
+    margin-top: auto;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.about {
+   background-color: rgb(248, 239, 223);
+    
+}
+
+.galeria {
+    background-color: rgb(248, 239, 223);
 }
